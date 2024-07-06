@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+
+        body{
+            background-color:rgb(177, 49, 49);
+        }
+        nav {
+            display:flex;
+            flex-direction: row;
+            justify-content :space-between;
+            align-items:center;
+            padding-left :50px;
+            
+        }
+        
+
+    
+
+        a{
+            text-decoration:none;
+            color:none;
+            
+        }
+        .logo{
+            width:80px;
+            height:80px;
+        }
+
+        .menu{
+            display:flex;
+            flex-direction :row;
+            justify-content: space-between;
+            align-items:center;
+
+            padding:10px 20px;
+            background-color: none;
+            list-style: none;
+            gap:20px;
+            color:white;
+            cursor:pointer;
+        }
+
+        .content{
+            width:100%;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .text-box{
+            width:50%;
+            display:flex;
+            flex-direction: column;
+            padding:20px 40px;
+            gap:5px;
+            
+            color:white;
+        }
+
+        .btn{
+            display:flex;
+            flex-direction:row;
+            justify-content:  center;
+            align-items:center;
+
+            width :200px;
+            height:30px;
+            padding:20px 40px;
+            background-color: white;
+            border-radius: 50px;
+            border:0;
+
+        }
+
+        .btn:hover{
+            display:flex;
+            flex-direction:row;
+            justify-content:  center;
+            align-items:center;
+
+            width :200px;
+            height:30px;
+            padding:20px 40px;
+            background-color: rgb(210, 123, 123);
+            border-radius: 50px;
+            border:0;
+            cursor:pointer;
+        }
+
+        .img-box{
+            width:50%;
+            padding-right: 50px;
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items:center;
+            
+         
+            
+        }
+
+        .main-img{
+            width:600px;
+            height:400px;
+            padding-right: 50px;
+        }
+
+       
+       
+
+       
+
+        .text{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size:40px;
+            font-weight: 600;
+        }
+
+        footer{
+           
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            padding-left:50px;
+            padding-right:50px;
+
+
+        }
+
+         
+        .social-box{
+           
+            display:flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            align-items:flex-start;
+            
+            gap:20px;
+            
+        }
+
+        .toggle-bar{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap:10px;
+            color:white;
+        }
+
+        .nav-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap:20px;
+            
+        }
+
+        .nav-box div{
+            width:30px;
+            height:30px;
+            border:2px solid rgb(255, 255, 255);
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            color:white;
+
+            cursor: pointer;
+            
+        }
+        .label-box{
+            height:20px;
+            padding:10px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .slider>.slide{
+            display:none;
+        }
+        .slider>.slide.active{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="#">
+            <img src="assets/images/logo.png" alt="logo" class="logo">
+        </a>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="text-box">
+            <h1>It's Finger <br>
+            Lickin <span class="text">Good.</span></h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quos sed temporibus. Enim, iusto. Inventore, facilis vel, accusantium neque, exercitationem voluptatum magnam nostrum maiores quos libero amet illo cumque modi!</p>
+            <button class="btn"> Order Now </button>
+        </div> 
+
+
+   
+
+    <div class="img-box">
+        <div class="slider">
+            <div class="slide active">
+                <img src="assets/images/product1.png" class="main-img">
+            </div>
+            <div class="slide">
+                <img src="assets/images/product2.png" class="main-img">
+            </div>
+            <div class="slide">
+                <img src="assets/images/product3.png" class="main-img">
+            </div>
+           
+            <div class="slide">
+                <img src="assets/images/product5.png" class="main-img">
+            </div>
+            <div class="slide">
+                <img src="assets/images/product6.png" class="main-img">
+            </div>
+        </div>
+        
+
+      
+    </div>
+   
+
+</div>
+
+   <footer>
+
+    <div class="social-box">
+        <div class="facebook"><i class="fa-brands fa-facebook" style="font-size:20px;color:white;"></i></div>
+        <div class="twitter"><i class="fa-brands fa-twitter" style="font-size:20px;color:white;"></i></div>
+        <div class="instagram"> <i class="fa-brands fa-instagram" style="font-size:20px;color:white;"></i></div>
+    </div>
+    <div class="toggle-bar">
+        <div class="label-box">
+            <label>____ &nbsp;&nbsp;&nbsp; Always Fresh</label>
+        </div>
+        <div class="nav-box">
+            <div class="prev-box"><ion-icon name="chevron-back-outline"></ion-icon>  </div>
+            <div class="next-box"> <ion-icon name="chevron-forward-outline"></ion-icon> </div>
+        </div>
+        
+
+    </div>
+
+    </footer>
+    
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+
+        var i=0;
+        const slides=document.querySelectorAll(".slide")
+        const prevBtn=document.querySelector(".prev-box")
+        const nextBtn=document.querySelector(".next-box")
+
+       function ActivateSlide(x){
+            for(slide of slides)
+                 slide.classList.remove("active")
+
+            slides[x].classList.add("active")
+                 
+        }
+
+       
+
+        nextBtn.addEventListener("click",(e)=>{
+            e.preventDefault()
+            n=slides.length-1;
+
+            if(i==n){
+                i=0;
+                ActivateSlide(i)
+
+            }
+            else{
+                i++;
+                ActivateSlide(i)
+
+            }
+
+        })
+
+
+        prevBtn.addEventListener("click",(e)=>{
+            e.preventDefault()
+           
+
+            if(i==0){
+                i=slides.length-1;
+                ActivateSlide(i)
+
+            }
+            else{
+                i--;
+                ActivateSlide(i)
+
+            }
+
+        })
+
+
+       
+    </script>
+</body>
+</html>
